@@ -5,10 +5,10 @@ import { FaUserCircle } from "react-icons/fa";
 
 const Sidebar = ({sidebarOpen}) => {
   return (
-    <div className={`${sidebarOpen && "translate-x-full"} duration-150 absolute  top-full left-0 w-full h-screen  md:hidden `}>
+    <div className={`${sidebarOpen && "translate-x-full"} duration-150 absolute  top-full left-0 w-full h-screen  md:hidden overflow-hidden`}>
       <div className='bg-gray-100 shadow-md'>
 
-        <div className='flex flex-col gap-3 px-4 pb-4 pt-2 text-xs sm:px-[5vw]'>
+        <div className='flex flex-col gap-3 px-4 pb-4 pt-2 text-base sm:px-[5vw]'>
           <NavLink to='/'>
             <p>Home</p>
           </NavLink>

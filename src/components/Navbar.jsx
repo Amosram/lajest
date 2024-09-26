@@ -51,7 +51,7 @@ const Navbar = () => {
         {
           sidebarOpen? <CiMenuKebab onClick={handleNavbar} className='font-extrabold cursor-pointer'/>
           :
-          <IoMdClose onClick={handleNavbar} className='font-extrabold cursor-pointer'/>
+          <IoMdClose onClick={handleNavbar} className='font-extrabold cursor-pointer text-lg'/>
         }
        
       </div>
