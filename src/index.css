@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --dark-blue:#111827;
+}
+
+body {
+    background-color: #f3f4f6 ;
+}
+
+/* Custorm css */
+.header {
+    background-color: rgba(192, 192, 192, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* background images */
+.hero {
+    background: url("../bg-images/bg-hero.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-right {
+    background: url("../bg-images/login-bg-img2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: var(--dark-blue);
+}
+
+/* text gradient color */
+.text-gradient {
+    background: linear-gradient(to right, rgb(224, 145, 224), #fb923c, pink );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* background gradient color */
+.--bg-gradient-1 {
+    background:linear-gradient(90deg,var(--dark-blue),#2b1f15);
+}
+
+.--bg-gradient-2 {
+    background:linear-gradient(90deg,var(--dark-blue),#181b23);
+}
+
+.blog {
+    background-image: radial-gradient(#fff, rgba(251, 146, 60, 0.2));
+}
+
+/* common button style */
+
+.btn-hover-1:hover {
+    background-color: transparent;
+    border:1px solid #fb923c;
+}
+
+.btn-hover-2:hover {
+    background-color: #fb923c;
+    border:none;
+}
