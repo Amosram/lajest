@@ -55,7 +55,7 @@ const Navbar = () => {
         }
        
       </div>
-      <Sidebar sidebarOpen={sidebarOpen}/>
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
     </div>
   )
 }
