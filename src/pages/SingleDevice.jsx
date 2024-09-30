@@ -61,10 +61,10 @@ const SingleDevice = () => {
               <FaStar className='text-orange-400'/>
               <FaStarHalfAlt className='text-orange-400'/>
             </div>
-            <p className='text-sm'>({deviceData.reviews})</p>
+            <p className='text-sm'>({deviceData.reviews}), ratings</p>
           </div>
           <hr className='border-none h-[0.5px] bg-gray-300 my-3'/>
-          <p className='font-medium'>{currency} {deviceData.price}.00</p>
+          <p className='font-medium'>{currency} {deviceData.price}</p>
           {/*device specs  */}
           <div className='my-3'>
             <h5 className='text-base font-medium mb-2'>Device Specs</h5>
@@ -133,7 +133,7 @@ const SingleDevice = () => {
               <Link to={deviceData.site} target='_blank'>
                 <p className='text-xs mt-4 bg-black w-fit px-2 py-1 text-orange-200 rounded-md hover:shadow-md'>More from official site</p>
               </Link>
-              <Link to={deviceData.site} target='_blank'>
+              <Link to={deviceData.affiliate_link} target='_blank'>
                 <p className='text-xs mt-4 bg-black w-fit px-2 py-1 text-orange-200 rounded-md hover:shadow-md'>Buy this device now</p>
               </Link>
             </div>

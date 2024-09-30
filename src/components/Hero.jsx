@@ -1,5 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { NavLink } from 'react-router-dom'
+import { Link as LinkNav } from 'react-scroll';
 
 const Hero = () => {
   return (
@@ -12,8 +14,8 @@ const Hero = () => {
           <p>Well, look no further, lajest is here to help make your work much easier</p>
         </div>
         <div className='mt-5 flex gap-4'>
-          <button  className='bg-orange-400 px-4 py-2 rounded-3xl duration-150 btn-hover-1 '>Read More</button>
-          <button  className='border border-orange-400 px-4 py-2 rounded-3xl duration-150 btn-hover-2'>Get Started</button>
+          <NavLink to="/about"><button  className='bg-orange-400 px-4 py-2 rounded-3xl duration-150 btn-hover-1 '>Learn More</button></NavLink>
+          <LinkNav to="topDevices"><button  className='border border-orange-400 px-4 py-2 rounded-3xl duration-150 btn-hover-2'>Get Started</button></LinkNav>
         </div>
       </div>
       

@@ -13,7 +13,7 @@ const TopDevices = () => {
     }, [])
 
   return (
-    <div className='min-h-[80vh] flex flex-col items-center gap-5 px-4 sm:px-[5vw] mb-12'>
+    <div className='min-h-[80vh] flex flex-col items-center gap-5 px-4 sm:px-[5vw] mb-12' id='topDevices'>
         <div>
             <TitleTwo text1={"POPULAR"} text2={"DEVICES"}/>
             <p>Popularly recognized devices</p>

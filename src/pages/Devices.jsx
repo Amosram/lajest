@@ -72,10 +72,13 @@ const Devices = () => {
                 <input type="checkbox" onChange={toggleCategory} value={"Samsung"}/>Samsung
               </p>
               <p className='flex gap-2'>
-                <input type="checkbox" onChange={toggleCategory} value={"Microsft"}/>Microsoft
+                <input type="checkbox" onChange={toggleCategory} value={"Microsoft"}/>Microsoft
               </p>
               <p className='flex gap-2'>
                 <input type="checkbox" onChange={toggleCategory} value={"Alienware"}/>Alienware
+              </p>
+              <p className='flex gap-2'>
+                <input type="checkbox" onChange={toggleCategory} value={"Lenovo"}/>Lenovo
               </p>
               <p className='flex gap-2'>
                 <input type="checkbox" onChange={toggleCategory} value={"Dell"}/>Dell
@@ -103,9 +106,6 @@ const Devices = () => {
               </p>
               <p className='flex gap-2'>
                 <input type="checkbox" onChange={toggleSubCategory} value={'Tablet'}/>Tablet
-              </p>
-              <p className='flex gap-2'>
-                <input type="checkbox" onChange={toggleSubCategory} value={'Phone'}/>Phone
               </p>
             </div>
           </div>
