@@ -11,7 +11,7 @@ const Login = () => {
   }
 
   return (
-    <div className=' flex flex-col items-center justify-center text-gray-800 login-right min-h-screen fixed top-0  w-full'>
+    <div className='bg-gray-900 flex flex-col items-center justify-center text-gray-800 min-h-screen fixed top-0  w-full login-right'>
     
       <NavLink to='/' className='absolute top-0 left-0'>
         <h1 className='text-gradient px-4 py-4 text-xl font-medium'>lajest.</h1>
