@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 const date = new Date().getFullYear();
 
@@ -40,9 +40,19 @@ const Footer = () => {
             </div>
        </div>
        <hr className='border-none h-[0.6px] bg-gray-700 w-full m-auto mb-4'/>
-       <div className='text-gray-400 flex gap-3 items-center justify-center text-sm pb-2'>
-            <p>&copy;{date} <span>lajest.com</span></p>
-            <p>All Rights Reserved</p>
+       <div className='text-gray-400 flex flex-col sm:flex-row gap-3 items-center justify-between text-sm pb-2'>
+            <div></div>
+            <div className='flex'>
+                <p>&copy;{date} <span>lajest.com</span></p>
+                <p>All Rights Reserved</p>
+            </div>
+            <div>
+                <p>Designed and by developed
+                    <Link to='https://amosram.github.io/amosram-dev/' target='_blank' className='pl-1 underline'>
+                        Amosram
+                    </Link>
+                </p>
+            </div>
        </div>
      
     </div>

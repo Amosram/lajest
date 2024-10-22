@@ -51,12 +51,6 @@ html::-webkit-scrollbar-thumb {
     background-position: center;
 }
 
-.login-right {
-    background: url("../bg-images/login-bg-img2.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .footer {
     background-color: var(--dark-blue);
 }
