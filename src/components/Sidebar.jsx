@@ -6,7 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 const Sidebar = ({sidebarOpen}) => {
   
   return (
-    <div className={`${sidebarOpen && "translate-x-full"} duration-150 absolute  top-full left-0 w-full h-screen  md:hidden overflow-hidden`}>
+    <div className={`${sidebarOpen && "translate-x-full"} duration-150 absolute top-full left-0 w-full md:hidden overflow-hidden`}>
       <div className='sidebar shadow-md'>
 
         <div className='flex flex-col gap-3 px-4 pb-4 pt-2 text-base sm:px-[5vw]'>
