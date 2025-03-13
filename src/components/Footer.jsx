@@ -15,16 +15,16 @@ const Footer = () => {
             <div>
                 <h3 className='mb-3'>Company</h3>
                 <div className='text-gray-400 text-sm flex flex-col gap-1'>
-                    <NavLink to='/'>
+                    <NavLink to='/' className='w-fit'>
                         <p className='hover:text-orange-400 duration-100'>Home</p>
                     </NavLink>
-                    <NavLink to='/about'>
+                    <NavLink to='/about' className='w-fit'>
                         <p className='hover:text-orange-400 duration-100'>About Us</p>
                     </NavLink>
-                    <NavLink to='/contact'>
+                    <NavLink to='/contact ' className='w-fit'>
                         <p className='hover:text-orange-400 duration-100'>Contact Us</p>
                     </NavLink>
-                    <NavLink to='#'>
+                    <NavLink to='#' className='w-fit'>
                         <p className='hover:text-orange-400 duration-100'>Privacy Policy</p>
                     </NavLink>
                 </div>
@@ -34,20 +34,19 @@ const Footer = () => {
                 <h3 className='mb-3'>Newsletter</h3>
                 <p className='text-gray-400 text-sm mb-2'>Subscribe to our newsletter</p>
                 <form className='flex items-center'>
-                    <input className='outline-none px-2 py-1 text-black bg-gray-200 rounded-sm' type='email' placeholder='Enter your email...' required/>
-                    <button className='px-2 bg-orange-400 py-1 text-black rounded-sm font-medium' type='submit'>Submit</button>
+                    <input className='outline-none px-2 py-1 text-black bg-gray-200 rounded-l-2xl' type='email' placeholder='Enter your email...' required/>
+                    <button className='px-2 bg-orange-400 py-1 text-black rounded- font-medium rounded-r-2xl' type='submit'>Submit</button>
                 </form>
             </div>
        </div>
        <hr className='border-none h-[0.6px] bg-gray-700 w-full m-auto mb-4'/>
        <div className='text-gray-400 flex flex-col sm:flex-row gap-3 items-center justify-between text-sm pb-2'>
-            <div></div>
-            <div className='flex'>
-                <p>&copy;{date} <span>lajest.com</span></p>
+            <div className='flex gap-1'>
+                <p>&copy;{date} <span> lajest.com</span></p>
                 <p>All Rights Reserved</p>
             </div>
             <div>
-                <p>Designed and by developed
+                <p>Designed and Developed By
                     <Link to='https://amosram.github.io/amosram-dev/' target='_blank' className='pl-1 underline'>
                         Amosram
                     </Link>

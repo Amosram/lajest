@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiMenuKebab } from "react-icons/ci";
-import { FaUserCircle } from "react-icons/fa";
 import Sidebar from './Sidebar';
 import { IoMdClose } from "react-icons/io";
+import { SlUser } from "react-icons/sl";
+import { FaAngleRight } from "react-icons/fa";
+
 
 
 
@@ -18,7 +20,7 @@ const Navbar = () => {
     <div className='header relative flex items-center justify-between w-full px-4 py-2 sm:px-[5vw] shadow-md'>
       <div>
         <NavLink to='/'>
-          <h1 className='cursor-default font-medium'>lajest.</h1>
+          <h1 className='cursor-default font-semibold text-lg'>lajest.</h1>
         </NavLink>
       </div>
 
@@ -42,9 +44,9 @@ const Navbar = () => {
       </div>
       
       <div className='hidden md:flex'>
-        <NavLink to='/login' className='flex items-center gap-2 bg-gray-900 hover:bg-gray-800 hover:shadow-md duration-150 text-white px-3 py-1 rounded-2xl'>
-          <FaUserCircle/>
-          <p className=''>Sign in</p>
+        <NavLink to='/login' className='flex items-center gap-2 hover:shadow-md duration-150 text-slate-900 px-3 py-[6px] rounded-2xl border-[1px] border-slate-500'>
+          <SlUser/>
+          <FaAngleRight/>
         </NavLink>
       </div>
       <div className='md:hidden '>

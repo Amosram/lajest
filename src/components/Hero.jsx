@@ -9,8 +9,8 @@ const Hero = () => {
       {/* hero right */}
       <div className=' mt-8 lg:mt-0'>
         <h1 className='text-3xl md:text-5xl mb-5'>Welcome to <span className='text-gradient'>lajest.</span></h1> 
-        <div className='text-sm sm:text-base'>
-          <p>Do you face difficulties in finding details for a particular computing device?</p>
+        <div className='text-sm sm:text-base flex flex-col gap-2'>
+          <p>Do you face challenges in finding specs for a particular computing device?</p>
           <p>Well, look no further, lajest is here to help make your work much easier</p>
         </div>
         <div className='mt-5 flex gap-4'>
